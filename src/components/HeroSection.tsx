@@ -48,13 +48,15 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <button
-            onClick={() => scrollTo("cta")}
+          <a
+            href="https://wa.me/5567991788626?text=Base%20Digital%20%7C%20Web%20Design"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group bg-primary text-primary-foreground px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 glow-border"
           >
             Solicitar Orçamento
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
           <button
             onClick={() => scrollTo("method")}
             className="border border-border text-foreground px-8 py-4 rounded-xl text-base font-medium hover:bg-secondary/50 transition-all"
