@@ -31,12 +31,14 @@ const Header = () => {
             </button>
           ))}
         </nav>
-        <button
-          onClick={() => scrollToSection("cta")}
+        <a
+          href="https://wa.me/5567991788626?text=Base%20Digital%20%7C%20Web%20Design"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
         >
           Solicitar Orçamento
-        </button>
+        </a>
       </div>
     </motion.header>
   );

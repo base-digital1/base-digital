@@ -21,7 +21,7 @@ const CTASection = () => (
           Dê o próximo passo para uma presença digital que gera resultados reais para o seu negócio.
         </p>
         <a
-          href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20site."
+          href="https://wa.me/5567991788626?text=Base%20Digital%20%7C%20Web%20Design"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-primary/90 transition-all glow-border"
