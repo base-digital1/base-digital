@@ -32,7 +32,7 @@ const Header = () => {
           ))}
         </nav>
         <a
-          href="https://wa.me/5567991788626?text=Base%20Digital%20%7C%20Web%20Design"
+          href="https://wa.me/5567991788626?text=Quero%20solicitar%20meu%20or%C3%A7amento!"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"

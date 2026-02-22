@@ -9,7 +9,7 @@ const Footer = () => (
       </div>
 
       <a
-        href="https://wa.me/5567991788626?text=Base%20Digital%20%7C%20Web%20Design"
+        href="https://wa.me/5567991788626?text=Quero%20solicitar%20meu%20or%C3%A7amento!"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"

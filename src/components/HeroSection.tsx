@@ -49,7 +49,7 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="https://wa.me/5567991788626?text=Base%20Digital%20%7C%20Web%20Design"
+            href="https://wa.me/5567991788626?text=Quero%20solicitar%20meu%20or%C3%A7amento!"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-primary text-primary-foreground px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary/90 transition-all flex items-center justify-center gap-2 glow-border"
