@@ -14,7 +14,7 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/30 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <img src={logo} alt="Base Digital" className="h-8 md:h-10 object-contain" />
+        <img src={logo} alt="Base Digital" className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover" />
         <nav className="hidden md:flex items-center gap-8">
           {[
             { label: "Sobre", id: "why" },
