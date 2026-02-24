@@ -23,15 +23,23 @@ const HeroSection = () => {
           </span>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
-        >
-          Sua empresa merece uma presença digital que transmite{" "}
-          <span className="text-gradient glow-text">confiança</span> desde o primeiro contato.
-        </motion.h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          {["Sua", "empresa", "merece", "uma", "presença", "digital", "que", "transmite", "confiança", "desde", "o", "primeiro", "contato."].map((word, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{
+                duration: 0.5,
+                delay: 0.4 + i * 0.07,
+                ease: [0.25, 0.4, 0.25, 1],
+              }}
+              className={`inline-block mr-[0.3em] ${word === "confiança" ? "text-gradient glow-text" : ""}`}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
