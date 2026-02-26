@@ -23,12 +23,12 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
         background: scrolled
-          ? "linear-gradient(180deg, rgba(8, 12, 24, 0.85) 0%, rgba(8, 12, 24, 0.75) 100%)"
+          ? "linear-gradient(180deg, rgba(8, 12, 24, 0.45) 0%, rgba(8, 12, 24, 0.35) 100%)"
           : "transparent",
-        backdropFilter: scrolled ? "blur(24px) saturate(1.3)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(24px) saturate(1.3)" : "none",
+        backdropFilter: scrolled ? "blur(40px) saturate(1.5)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(40px) saturate(1.5)" : "none",
         borderBottom: scrolled ? "1px solid rgba(255, 255, 255, 0.06)" : "1px solid transparent",
-        boxShadow: scrolled ? "0 4px 24px -4px rgba(0, 0, 0, 0.4)" : "none",
+        boxShadow: scrolled ? "0 4px 24px -4px rgba(0, 0, 0, 0.3)" : "none",
       }}
     >
       <div className="container mx-auto flex items-center justify-between py-3.5">
