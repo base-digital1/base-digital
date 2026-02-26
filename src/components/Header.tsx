@@ -13,12 +13,7 @@ const Header = () => {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        background: "linear-gradient(180deg, rgba(8, 12, 24, 0.55) 0%, rgba(8, 12, 24, 0.4) 100%)",
-        backdropFilter: "blur(28px) saturate(1.4)",
-        WebkitBackdropFilter: "blur(28px) saturate(1.4)",
-        borderBottom: "1px solid rgba(255, 255, 255, 0.07)",
-        borderTop: "1px solid rgba(255, 255, 255, 0.04)",
-        boxShadow: "0 8px 32px -8px rgba(0, 0, 0, 0.5), 0 1px 0 0 rgba(255, 255, 255, 0.03) inset",
+        background: "transparent",
       }}
     >
       <div className="container mx-auto flex items-center justify-between py-3.5">
