@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import logo from "@/assets/logo-base-digital.png";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -11,9 +20,15 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        background: "transparent",
+        background: scrolled
+          ? "linear-gradient(180deg, rgba(8, 12, 24, 0.85) 0%, rgba(8, 12, 24, 0.75) 100%)"
+          : "transparent",
+        backdropFilter: scrolled ? "blur(24px) saturate(1.3)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(24px) saturate(1.3)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(255, 255, 255, 0.06)" : "1px solid transparent",
+        boxShadow: scrolled ? "0 4px 24px -4px rgba(0, 0, 0, 0.4)" : "none",
       }}
     >
       <div className="container mx-auto flex items-center justify-between py-3.5">
