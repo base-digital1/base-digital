@@ -14,7 +14,7 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-        preload="metadata"
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         aria-hidden="true"
       >
@@ -49,12 +49,12 @@ const HeroSection = () => {
           {["Sua", "empresa", "merece", "uma", "presença", "digital", "que", "transmite", "confiança", "desde", "o", "primeiro", "contato."].map((word, i) => (
             <motion.span
               key={i}
-              initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.5,
-                delay: 0.4 + i * 0.07,
-                ease: [0.25, 0.4, 0.25, 1],
+                duration: 0.4,
+                delay: 0.3 + i * 0.05,
+                ease: "easeOut",
               }}
               className={`inline-block mr-[0.3em] ${word === "confiança" ? "text-gradient glow-text" : ""}`}
             >
