@@ -23,9 +23,10 @@ const ServicesSection = () => (
     <div className="absolute inset-0 hero-glow pointer-events-none opacity-50" />
     <div className="container mx-auto max-w-5xl relative z-10">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="text-center mb-16"
       >
         <span className="text-primary text-sm font-medium tracking-widest uppercase">Nossos serviços</span>
@@ -38,8 +39,8 @@ const ServicesSection = () => (
             key={s.title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: i * 0.08, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="glass-card p-7 hover:border-primary/30 transition-colors group"
           >
             <s.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
@@ -52,7 +53,8 @@ const ServicesSection = () => (
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="glass-card p-8 md:p-10"
       >
         <h3 className="text-xl font-semibold mb-6 text-center">

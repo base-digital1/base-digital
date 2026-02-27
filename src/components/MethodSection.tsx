@@ -26,9 +26,10 @@ const MethodSection = () => (
   <section id="method" className="section-padding">
     <div className="container mx-auto max-w-5xl">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="text-center mb-16"
       >
         <span className="text-primary text-sm font-medium tracking-widest uppercase">Como funciona</span>
@@ -39,10 +40,10 @@ const MethodSection = () => (
         {steps.map((s, i) => (
           <motion.div
             key={s.num}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.2, duration: 0.6 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: i * 0.15, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative text-center"
           >
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 mb-6">
