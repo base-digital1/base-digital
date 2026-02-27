@@ -26,22 +26,22 @@ const reasons = [
 
 const container = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
+  show: { transition: { staggerChildren: 0.12 } },
 };
 
 const item = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] as const } },
 };
 
 const WhySection = () => (
   <section id="why" className="section-padding relative">
     <div className="container mx-auto max-w-5xl">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="text-center mb-16"
       >
         <span className="text-primary text-sm font-medium tracking-widest uppercase">Por que ter um site</span>
@@ -54,7 +54,7 @@ const WhySection = () => (
         variants={container}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-60px" }}
         className="grid md:grid-cols-2 gap-6"
       >
         {reasons.map((r) => (

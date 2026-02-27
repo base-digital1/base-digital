@@ -8,10 +8,10 @@ const CTASection = () => (
 
     <div className="container mx-auto max-w-3xl relative z-10 text-center">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-6">
           Profissionalize sua empresa agora e conquiste{" "}

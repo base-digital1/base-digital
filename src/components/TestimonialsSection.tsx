@@ -20,9 +20,10 @@ const TestimonialsSection = () => (
   <section id="testimonials" className="section-padding">
     <div className="container mx-auto max-w-5xl">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
         className="text-center mb-16"
       >
         <span className="text-primary text-sm font-medium tracking-widest uppercase">Depoimentos</span>
@@ -35,8 +36,8 @@ const TestimonialsSection = () => (
             key={t.name}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.15 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ delay: i * 0.12, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="glass-card p-8 flex flex-col"
           >
             <Quote className="w-8 h-8 text-primary/30 mb-4" />
